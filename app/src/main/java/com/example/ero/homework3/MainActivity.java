@@ -27,26 +27,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button button1 = findViewById(R.id.button1);
-        final Button button2 = findViewById(R.id.button2);
-        final Button button3 = findViewById(R.id.button3);
+        final Button button11 = findViewById(R.id.button1);
+        final Button button22 = findViewById(R.id.button2);
+        final Button button33 = findViewById(R.id.button3);
         imageView1 = findViewById(R.id.a7);
 
-        button1.setOnClickListener(new View.OnClickListener() {
+        button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 imageView1.setImageResource(R.drawable.a777);
             }
         });
 
-        button2.setOnClickListener(new View.OnClickListener() {
+        button22.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Picasso.get().load(ImageUrl).fit().into(imageView1);
             }
         });
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        button33.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
               openGallery();
